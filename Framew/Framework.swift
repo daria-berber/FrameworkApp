@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Framework {
+struct Framework: Hashable, Identifiable {
+    let id = UUID()
     let name: String
     let imageName: String
     let urlString: String
@@ -15,6 +16,11 @@ struct Framework {
 }
 
 struct MockData {
+    
+    static let sampleFramework = Framework(name: "ARKit",
+                                          imageName: "arkit",
+                                          urlString: "https://developer.apple.com/arkit/",
+                                          description: "A framework for creating augmented reality experiences using the device’s camera and motion sensors — enables placing 3D objects into the real world (e.g., furniture placement, interactive games).")
     
     static let frameworks = [
         Framework(name: "App Clip",

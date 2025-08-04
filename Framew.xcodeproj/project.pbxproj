@@ -29,12 +29,40 @@
 		7D6620A52E32B1D70083447F /* FramewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FramewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7D66208D2E32B1D60083447F /* Framew */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Framew;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7D6620F62E40B7660083447F /* Exceptions for "Framew" folder in "Framew" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AFButton.swift,
+				Assets.xcassets,
+				FramewApp.swift,
+				Framework.swift,
+				FrameworkDetailView.swift,
+				FrameworkGridView.swift,
+				FrameworkGridViewModel.swift,
+				"Preview Content/Preview Assets.xcassets",
+				SafariView.swift,
+			);
+			target = 7D66208A2E32B1D60083447F /* Framew */;
 		};
+		7D6620F72E40B7660083447F /* Exceptions for "Framew" folder in "FramewUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AFButton.swift,
+				Assets.xcassets,
+				FramewApp.swift,
+				Framework.swift,
+				FrameworkDetailView.swift,
+				FrameworkGridView.swift,
+				FrameworkGridViewModel.swift,
+				"Preview Content/Preview Assets.xcassets",
+				SafariView.swift,
+			);
+			target = 7D6620A42E32B1D70083447F /* FramewUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		7D66209E2E32B1D70083447F /* FramewTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FramewTests;
@@ -43,6 +71,15 @@
 		7D6620A82E32B1D70083447F /* FramewUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FramewUITests;
+			sourceTree = "<group>";
+		};
+		7D6620ED2E40B7660083447F /* Framew */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7D6620F62E40B7660083447F /* Exceptions for "Framew" folder in "Framew" target */,
+				7D6620F72E40B7660083447F /* Exceptions for "Framew" folder in "FramewUITests" target */,
+			);
+			path = Framew;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +112,7 @@
 		7D6620822E32B1D60083447F = {
 			isa = PBXGroup;
 			children = (
-				7D66208D2E32B1D60083447F /* Framew */,
+				7D6620ED2E40B7660083447F /* Framew */,
 				7D66209E2E32B1D70083447F /* FramewTests */,
 				7D6620A82E32B1D70083447F /* FramewUITests */,
 				7D66208C2E32B1D60083447F /* Products */,
@@ -106,9 +143,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				7D66208D2E32B1D60083447F /* Framew */,
 			);
 			name = Framew;
 			packageProductDependencies = (
@@ -155,6 +189,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				7D6620A82E32B1D70083447F /* FramewUITests */,
+				7D6620ED2E40B7660083447F /* Framew */,
 			);
 			name = FramewUITests;
 			packageProductDependencies = (
